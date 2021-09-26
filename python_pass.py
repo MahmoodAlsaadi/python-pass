@@ -10,5 +10,12 @@ Instructions:
 
 
 class StringOperations:
-    def reverse(self, *, to_be_reversed: str = None):
-        raise NotImplemented('This method need to be implemented')
+    def reverse(self,  to_be_reversed: str = None):
+        return to_be_reversed[::-1]
+
+class ReversedString(StringOperations):
+    def view(self,to_be_reversed):
+        print(self.reverse(to_be_reversed))
+
+ob1 = ReversedString()
+ob1.view("mahmood")
